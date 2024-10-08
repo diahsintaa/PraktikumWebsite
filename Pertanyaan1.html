@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resep Ayam Katsu</title>
+
+  <style>
+    /* CSS untuk judul dengan border */
+    h1 {
+      text-align: center;
+      color: #fff;
+      background-color: #f39c12;
+      padding: 10px;
+      border: 3px solid #c0392b;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* CSS untuk gambar di tengah */
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* CSS untuk bahan dengan background biru muda */
+    .bahan {
+      background-color: #d6eaf8;
+      padding: 15px;
+      color: #333;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* CSS untuk cara membuat dengan background kuning muda */
+    .cara-membuat {
+      background-color: #fcf3cf;
+      padding: 15px;
+      color: #333;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* CSS untuk tombol */
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: #f39c12;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #e67e22;
+    }
+
+    /* Footer CSS */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f39c12;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Judul resep -->
+  <h1>Resep Ayam Katsu</h1>
+
+  <!-- Gambar Ayam Katsu -->
+  <img src="https://oishipedia.com/wp-content/uploads/2023/09/Snapinsta.app_199642976_1442201386143212_7434957661754949293_n_1080-2-1024x977.jpg" alt="Ayam Katsu">
+
+  <!-- Daftar bahan dengan background warna biru muda -->
+  <div class="bahan">
+    <h2>Bahan-bahan:</h2>
+    <ul>
+      <li>2 potong dada ayam fillet</li>
+      <li>1 butir telur, kocok lepas</li>
+      <li>100 gram tepung roti (panko)</li>
+      <li>50 gram tepung terigu</li>
+      <li>1 sendok teh garam</li>
+      <li>1/2 sendok teh lada</li>
+      <li>Minyak goreng secukupnya</li>
+    </ul>
+  </div>
+
+  <!-- Cara membuat dengan background warna kuning muda -->
+  <div class="cara-membuat">
+    <h2>Cara Membuat:</h2>
+    <ol>
+      <li>Taburi dada ayam fillet dengan garam dan lada.</li>
+      <li>Gulingkan ayam ke dalam tepung terigu, celupkan ke dalam telur kocok, lalu balur dengan tepung roti (panko).</li>
+      <li>Panaskan minyak di wajan, goreng ayam hingga berwarna kecokelatan dan matang sempurna.</li>
+      <li>Angkat dan tiriskan. Sajikan dengan nasi dan saus favorit Anda.</li>
+    </ol>
+  </div>
+
+  <!-- Tombol cek dan cetak -->
+  <div class="button-container">
+    <button class="btn" onclick="cekNamaResep()">Cek Nama Resep</button>
+    <button class="btn" onclick="window.print()">Cetak Resep</button>
+  </div>
+
+  <!-- Footer dengan copyright -->
+  <footer>
+    &copy; Copyright Diah Sinta Nur Aeini 2024
+  </footer>
+
+  <script>
+    // Fungsi untuk menampilkan nama resep di console
+    function cekNamaResep() {
+      console.log("Resep Ayam Katsu");
+    }
+  </script>
+</body>
+</html>
