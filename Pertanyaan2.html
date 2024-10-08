@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu Risol Diah</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #2e86c1; /* Warna biru pada header */
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold; /* Font tebal pada judul */
+            margin-bottom: 10px;
+        }
+
+        #logo {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #2ecc71; /* Warna hijau pada navigasi */
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #000;
+            margin-top: 20px;
+        }
+
+        thead {
+            background-color: #f5b041; /* Warna header tabel */
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #fbeee0; /* Warna latar untuk baris ganjil */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9e79f; /* Warna latar untuk baris genap */
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+
+        td a {
+            color: #e74c3c; /* Mengubah warna tautan menjadi merah */
+            text-decoration: none;
+        }
+
+        td img {
+            width: 100px;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .order-form {
+            margin-top: 20px;
+        }
+
+        .order-form h2 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function submitOrder() {
+            const form = document.getElementById('pesananForm');
+            const selectedItems = Array.from(form.elements['menu'])
+                .filter(item => item.checked)
+                .map(item => item.value);
+
+            console.log("Pesanan Anda: ", selectedItems);
+            alert("Pesanan Anda: " + selectedItems.join(", "));
+        }
+    </script>
+</head>
+<body>
+    <!-- Heading dan Logo -->
+    <header>
+        <h1>Daftar Menu Restoran Diah</h1>
+        <img src="WhatsApp Image 2024-10-03 at 19.33.28_be7c745d.jpg" alt="logo Daftar Menu Diah" id="logo">
+        <nav>
+            <a href="index.html">MENU</a> |
+            <a href="file:///C:/PEMWEB.html/biodatadiah.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <!-- Tabel Menu -->
+    <table>
+        <thead title="Daftar Menu">
+            <tr>
+                <th>Nama Makanan</th>
+                <th>Harga</th>
+                <th>Tautan</th>
+                <th>Gambar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Risol Ayam</td>
+                <td>Rp 12.000</td>
+                <td><a href="https://cookpad.com/id/resep/11251731-risol-isi-ayam-suwir-pedas">Lihat Detail</a></td>
+                <td><img src="https://img-global.cpcdn.com/recipes/0d8b23af0903c9b8/1200x630cq70/photo.jpg" alt="Gambar Risol Ayam"></td>
+            </tr>
+            <tr>
+                <td>Risol Sayur</td>
+                <td>Rp 10.000</td>
+                <td><a href="https://food.detik.com/kue/d-6190463/resep-risoles-sayuran-yang-renyah-garing-buat-teman-ngopi">Lihat Detail</a></td>
+                <td><img src="https://akcdn.detik.net.id/community/media/visual/2022/07/21/resep-risoles-sayuran_43.jpeg?w=700&q=90" alt="Gambar Risol Sayur"></td>
+            </tr>
+            <tr>
+                <td>Risol Mayo</td>
+                <td>Rp 13.000</td>
+                <td><a href="https://cookpad.com/id/resep/16512950-risoles-mayo">Lihat Detail</a></td>
+                <td><img src="https://img-global.cpcdn.com/recipes/01ee4d34c9c6ec0d/680x482cq70/risoles-mayo-foto-resep-utama.webp" alt="Gambar Risol Mayo"></td>
+            </tr>
+            <tr>
+                <td>Risol Daging</td>
+                <td>Rp 15.000</td>
+                <td><a href="https://paxelmarket.co/wp-content/uploads/2022/03/4.Risol-Daging-Sayur.jpeg">Lihat Detail</a></td>
+                <td><img src="https://img-global.cpcdn.com/recipes/0e5e938572f50e33/680x482cq70/risoles-daging-cincang-keju-foto-resep-utama.webp" alt="Gambar Risol Daging"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form Pesanan -->
+    <div class="order-form">
+        <h2>Pemesanan</h2>
+        <form id="pesananForm">
+            <label><input type="checkbox" name="menu" value="Risol Ayam"> Risol Ayam - Rp 12.000</label><br>
+            <label><input type="checkbox" name="menu" value="Risol Sayur"> Risol Sayur - Rp 10.000</label><br>
+            <label><input type="checkbox" name="menu" value="Risol Mayo"> Risol Mayo - Rp 13.000</label><br>
+            <label><input type="checkbox" name="menu" value="Risol Daging"> Risol Daging - Rp 15.000</label><br>
+            <button type="button" onclick="submitOrder()">Kirim Pesanan</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        @Copyright Diah 2024
+    </footer>
+</body>
+</html>
