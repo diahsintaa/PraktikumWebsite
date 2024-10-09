@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Percabangan JavaScrpt</title>
-  </head>
-  <body>
+<head>
+    <title>Percabangan JavaScript</title>
+</head>
+<body>
     <p>
-      <script languange ="JavaScript">
-        alert("Terdapat 3 jenis barang yang tersedia!\n[1]barang satu\n[2]barang dua\n[3]barang tiga");
-        let indeksBarang = prompt("Membutuhkan jenis barang nomor berapa?)";
-        if (indeksBarang < 1 || indeksBarang > 3)
-       {
-         alert ("Barang Tidak Tersedia!");
-       }else{
-         alert("Barang tersedia, mohon ditunggu sebentar.."");
-       }
-      </script>
-      
+        <script language="JavaScript">
+            alert("Terdapat 3 jenis barang yang tersedia!\n[1] Barang Satu\n[2] Barang Dua\n[3] Barang Tiga");
+            let indeksBarang = prompt("Membutuhkan jenis barang nomor berapa?");
+            indeksBarang = parseInt(indeksBarang); // Konversi input ke angka
+            if (indeksBarang < 1 || indeksBarang > 3) {
+                alert("Barang Tidak Tersedia!");
+            } else {
+                alert("Barang tersedia, mohon ditunggu sebentar...");
+            }
+        </script>
     </p>
-  </body>
+</body>
 </html>
